@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "lib": ["esnext", "dom"],
+    "moduleResolution": "node",
+    "types": ["node", "@cucumber/cucumber"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "outDir": "dist",
+    "sourceMap": true
+  },
+  "include": [
+    "features/**/*.ts",
+    "steps/**/*.ts"
+  ]
+}
+

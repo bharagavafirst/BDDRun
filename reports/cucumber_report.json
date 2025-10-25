@@ -1,0 +1,51 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "verify-google-page;verify-google-launch-page",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "verify google launch page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I launch google home page",
+            "match": {
+              "location": "file:\\C:\\Users\\PK%20Bhargav\\BDD%20cucumber%20project%20for%20playwright\\steps\\example.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60088989499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I see google home page",
+            "match": {
+              "location": "file:\\C:\\Users\\PK%20Bhargav\\BDD%20cucumber%20project%20for%20playwright\\steps\\example.ts:15"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 7265954299,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.google.com/\"\u001b[39m\nReceived: \u001b[31m\"about:blank\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"to.have.url\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"about:blank\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Users\\PK Bhargav\\BDD cucumber project for playwright\\node_modules\\playwright\\lib\\matchers\\expect.js:221:24)\n    at World.<anonymous> (file:///C:/Users/PK%20Bhargav/BDD%20cucumber%20project%20for%20playwright/steps/example.ts:19:21)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "verify-google-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "verify google page",
+    "tags": [],
+    "uri": "features\\example.feature"
+  }
+]
