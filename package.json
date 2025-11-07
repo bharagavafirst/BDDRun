@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-    "scripts": {
-  "test": "cucumber-js",
-  "report": "node ./reporter.js"
-
+  "scripts": {
+    "clean-reports": "rimraf reports/*",
+    "test": "cucumber-js -r register.js",
+    "report": "node ./reporter.js"
   },
   "keywords": [],
   "author": "",
