@@ -6,6 +6,12 @@ export class LoginPage extends BasePage {
     password = '#password';
     loginButton = '#Login'; 
     validationmessage = '#error';
+    url = 'https://login.salesforce.com/';
+
+    async geturl()
+    {
+     await expect(this.page).toHaveURL(this.url);
+    }
   
     async getvalidationmesage(validation:string)
     {

@@ -20,6 +20,12 @@ When('I login with username {string} and password {string}', async function (thi
 Then('I should see validation message as {string}', async function (this: CustomWorld, valid:string) {
   loginPage = new LoginPage(this.page); 
   await loginPage.getvalidationmesage(valid);
+  });
+
+  Then('I can see home page', async function (this: CustomWorld) {
+  loginPage = new LoginPage(this.page); 
+  await loginPage.geturl();
+  });
+
   
-});
 

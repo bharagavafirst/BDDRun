@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "clean-reports": "rimraf reports/*",
-    "test": "cucumber-js -r register.js",
+     "test": "cucumber-js",
+    "test:regression": "cucumber-js --tags '@regression'",
+    "test:smoke": "cucumber-js --tags '@smoke'",
     "report": "node ./reporter.js"
   },
   "keywords": [],

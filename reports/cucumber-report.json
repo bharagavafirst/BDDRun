@@ -6,7 +6,7 @@
         "description": "",
         "id": "verify-login-functionality-for-various-roles;verify-as-a-admin-,-i-should-able-to-view-validation-message-when-login-with-invalid-username-and-password",
         "keyword": "Scenario",
-        "line": 3,
+        "line": 9,
         "name": "Verify As a admin , i should able to view validation message when login with invalid username and password",
         "steps": [
           {
@@ -14,46 +14,46 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 11467382199
+              "duration": 3091150600
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
+            "line": 10,
             "name": "I am on the login page",
             "match": {
               "location": "steps\\example.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 3076902700
+              "duration": 24316269799
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 5,
+            "line": 11,
             "name": "I login with username \"admin\" and password \"Admin@123\"",
             "match": {
               "location": "steps\\example.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 12804107299
+              "duration": 4969319400
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 6,
+            "line": 12,
             "name": "I should see validation message as \"Error: Please check your username and password. If you still can't log in, contact your Salesforce administrator.\"",
             "match": {
               "location": "steps\\example.ts:20"
             },
             "result": {
               "status": "passed",
-              "duration": 4527874499
+              "duration": 213952100
             }
           },
           {
@@ -61,11 +61,16 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 37370286699
+              "duration": 3436613700
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 8
+          }
+        ],
         "type": "scenario"
       }
     ],
