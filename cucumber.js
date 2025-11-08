@@ -7,7 +7,7 @@ module.exports = {
       "support/hooks.ts",
       "support/world.ts"
     ],
-    tags: "@smoke or @regression",
+    tags: process.env.CUCUMBER_TAG || '',
     publishQuiet: true,
     format: [
       "progress",
