@@ -1,0 +1,85 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "verify-login-functionality-for-various-roles;verify-as-a-admin-,-i-should-able-to-view-validation-message-when-login-with-invalid-username-and-password",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Verify As a admin , i should able to view validation message when login with invalid username and password",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 115819005999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I am on the login page",
+            "match": {
+              "location": "steps\\example.ts:10"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 31620937299,
+              "error_message": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://login.salesforce.com/\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.navigate (C:\\Users\\PK Bhargav\\cloned project\\BDDRun\\pages\\BasePage.ts:17:26)\n    at CustomWorld.<anonymous> (C:\\Users\\PK Bhargav\\cloned project\\BDDRun\\steps\\example.ts:12:23)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I login with username \"admin\" and password \"Admin@123\"",
+            "match": {
+              "location": "steps\\example.ts:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see validation message as \"Error: Please check your username and password. If you still can't log in, contact your Salesforce administrator.\"",
+            "match": {
+              "location": "steps\\example.ts:20"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 31726548199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "verify-login-functionality-for-various-roles",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "verify login functionality for various roles",
+    "tags": [],
+    "uri": "features\\example.feature"
+  }
+]

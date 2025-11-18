@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean-reports": "rimraf reports/*",
-     "test": "cucumber-js",
-    "test:regression": "cucumber-js --tags '@regression'",
-    "test:smoke": "cucumber-js --tags '@smoke'",
+    "clean": "rimraf reports",
+    "test:regression": "cross-env CUCUMBER_TAGS=@regression cucumber-js",
+    "test:smoke": "cross-env CUCUMBER_TAGS=@smoke cucumber-js",
     "report": "node ./reporter.js"
   },
   "keywords": [],
@@ -16,6 +15,7 @@
   "devDependencies": {
     "@cucumber/cucumber": "^12.2.0",
     "@playwright/test": "^1.56.1",
+    "cross-env": "^10.1.0",
     "cucumber-html-reporter": "^7.2.0",
     "multiple-cucumber-html-reporter": "^3.9.3",
     "ts-node": "^10.9.2",

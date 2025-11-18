@@ -4,56 +4,43 @@
     "elements": [
       {
         "description": "",
-        "id": "verify-login-functionality-for-various-roles;verify-as-a-admin-,-i-should-able-to-view-validation-message-when-login-with-invalid-username-and-password",
+        "id": "verify-login-functionality-for-various-roles;verify-as-a-admin-,-i-should-view-home-page",
         "keyword": "Scenario",
-        "line": 9,
-        "name": "Verify As a admin , i should able to view validation message when login with invalid username and password",
+        "line": 4,
+        "name": "Verify As a admin , I should view home page",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3091150600
+              "duration": 14331343099
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 10,
+            "line": 5,
             "name": "I am on the login page",
             "match": {
               "location": "steps\\example.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 24316269799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
-            "name": "I login with username \"admin\" and password \"Admin@123\"",
-            "match": {
-              "location": "steps\\example.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4969319400
+              "duration": 14468224099
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
-            "name": "I should see validation message as \"Error: Please check your username and password. If you still can't log in, contact your Salesforce administrator.\"",
+            "line": 6,
+            "name": "I can see home page",
             "match": {
-              "location": "steps\\example.ts:20"
+              "location": "steps\\example.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 213952100
+              "duration": 686242299
             }
           },
           {
@@ -61,14 +48,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3436613700
+              "duration": 9797753400
             }
           }
         ],
         "tags": [
           {
-            "name": "@regression",
-            "line": 8
+            "name": "@smoke",
+            "line": 3
           }
         ],
         "type": "scenario"

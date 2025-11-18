@@ -7,11 +7,12 @@ module.exports = {
       "support/hooks.ts",
       "support/world.ts"
     ],
-    tags: process.env.CUCUMBER_TAG || '',
     publishQuiet: true,
+    tags: process.env.CUCUMBER_TAGS || "",
+    tag: process.env.CUCUMBER_TAGS?.replace('@', '') || 'all',
     format: [
-      "progress",
-      "json:reports/cucumber-report.json"
+     "progress",
+      "json:reports/cucumber-report-${tag}.json"
     ],
     timeout: 120000
   }
